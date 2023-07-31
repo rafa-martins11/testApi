@@ -19,5 +19,10 @@ app.get('/', (req, res)=> {
     res.json({message: 'Olá Express!'})
 })
 
+app.get('/olamundo', (req, res)=> {
+    // mostrar req
+    res.json({mensagem: 'Olá Mundo! Este é o meu endpoint'})
+})
+
 // entregar uma porta
 app.listen(3000)
