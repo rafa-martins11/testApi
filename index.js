@@ -27,6 +27,11 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/olamundo', (req, res)=> {
+    // mostrar req
+    res.json({mensagem: 'Olá Mundo! Este é o meu endpoint'})
+})
+
+app.get('/olamundo', (req, res)=> {
     res.json({mensagem: 'Olá Mundo! Este é o meu endpoint'})
 })
 
